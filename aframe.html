@@ -18,23 +18,19 @@
             }
         });
     </script>
-    <a-scene background="color: #ECECEC">
-      <a-box position="-1 0.5 -3" chao rotation="0 45 0" color="#4CC3D9"
-          animation="startEvents: click; property: position;
-              from: -1 1.5 -3; to: -1 0.5 -3; dur: 1000">
-      </a-box>
+    <a-scene background="color: #BC8648">
+        <a-box position="-1 0.5 -3" chao rotation="0 45 0" color="#4CC3D9"
+            animation="startEvents: click; property: position;
+                from: -1 1.5 -3; to: -1 0.5 -3; dur: 1000">
+        </a-box>
+        
 
-      <a-sphere position="-2 1 -3" hello rotation="1 90 1" color="#4CC3D9"
-        animation="startEvents: click; property: position;
-          from: -3 2 -4; to: -2 1 3; property: position;  dur:1000">
-      <a-sphere>
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
 
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-
-      <a-entity movement-controls="fly: true" position="0 0 0">
-        <a-entity camera position="0 1.6 0" look-controls wasd-controls></a-entity>
-        <a-entity cursor="rayOrigin:mouse"></a-entity>
-        <a-entity laser-controls="hand: right"></a-entity>
+        <a-entity movement-controls="fly: true" position="0 0 0">
+            <a-entity camera position="0 1.6 0" look-controls wasd-controls></a-entity>
+            <a-entity cursor="rayOrigin:mouse"></a-entity>
+            <a-entity laser-controls="hand: right"></a-entity>
     </a-scene>
   </body>
 </html>
